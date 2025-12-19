@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarjeta de Crédito • Cupo hasta 30.000.000</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root { 
+      --brand-blue: #0044a9; 
+      --brand-blue-dark: #003380;
+    }
+    .header-blue { background: var(--brand-blue); }
+    .text-brand-blue { color: var(--brand-blue); }
+    .bg-brand-blue { background: var(--brand-blue); }
+    .hover-bg-brand-blue:hover { background: var(--brand-blue-dark); }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="header-blue text-white shadow-md">
+    <div class="max-w-lg mx-auto px-4 py-4 flex items-center justify-between">
+      <img src="logo.png" class="h-4 object-contain" alt="logo">
+
+      <div class="flex items-center gap-4">
+        <button class="p-1">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-lg mx-auto px-5 py-7">
+
+    <div class="text-sm text-gray-500 mb-4 flex items-center gap-2">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+      </svg>
+      <span>Tarjetas de Crédito</span>
+    </div>
+
+    <h1 class="text-[33px] font-extrabold leading-tight mb-3 text-gray-900">
+      Tarjeta de crédito cupo hasta 30.000.000
+    </h1>
+
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Aumente sus posibilidades financieras con nuestra tarjeta exclusiva. Obtenga un cupo preferencial diseñado para sus proyectos y compras de alto nivel, con beneficios únicos en cada transacción.
+    </p>
+
+    <button onclick="location.href='cedula.html'"
+      class="w-full bg-brand-blue hover-bg-brand-blue transition text-white font-semibold py-3 rounded-full text-lg mb-7 shadow-lg shadow-blue-300/40">
+      Solicitar Ahora
+    </button>
+
+    <div class="rounded-2xl overflow-hidden shadow-md mb-10">
+      <img src="man.png" class="w-full h-64 object-cover" alt="Tarjeta de Crédito">
+    </div>
+
+    <h2 class="text-2xl font-bold mb-5">Beneficios de su Nueva Tarjeta</h2>
+
+    <div class="space-y-5">
+
+      <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-start border-l-4 border-[#0044a9]">
+        <svg class="w-9 h-9 text-brand-blue shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 2.5-8.5L3 9h7z" stroke-linejoin="round"/>
+        </svg>
+        <p class="font-medium text-lg">Cupo Premium aprobado hasta $30.000.000.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-start">
+        <svg class="w-9 h-9 text-brand-blue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M12 20v-6m0 0V4m0 10h8m-8 0H4" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3 class="font-semibold text-lg">Tasa Preferencial</h3>
+          <p class="text-gray-600">Disfrute de una de las tasas de interés más competitivas del mercado.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-start">
+        <svg class="w-9 h-9 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor">
+          <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <h3 class="font-semibold text-lg">Aprobación Digital</h3>
+          <p class="text-gray-600">Proceso 100% en línea con respuesta en pocos minutos.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4">¿Cómo obtenerla?</h2>
+
+    <div class="space-y-4 mb-10">
+      <div class="flex items-start gap-4">
+        <div class="w-9 h-9 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">1</div>
+        <p class="text-gray-700">Ingrese su número de cédula para validar la oferta.</p>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="w-9 h-9 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">2</div>
+        <p class="text-gray-700">Verifique el cupo disponible para usted.</p>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="w-9 h-9 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold">3</div>
+        <p class="text-gray-700">Confirme sus datos y reciba su tarjeta virtual.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <button class="fixed bottom-6 right-4 bg-brand-blue text-white p-3 rounded-xl shadow-lg">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M18 8a6 6 0 10-12 0v4a3 3 0 003 3h.5a1.5 1.5 0 001.5-1.5V12a1 1 0 00-1-1H9" />
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M6 15v2a2 2 0 002 2h1" />
+    </svg>
+  </button>
+
+  <footer class="w-full mt-10 py-6 bg-white border-t shadow-sm">
+    <div class="max-w-lg mx-auto px-5 flex justify-center">
+      <img src="logo.png" class="h-5 opacity-80" alt="logo">
+    </div>
+  </footer>
+
+</body>
+</html>
